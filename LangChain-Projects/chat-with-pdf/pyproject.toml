@@ -1,0 +1,27 @@
+[project]
+name = "chat-with-pdf"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abdulrehman104", email = "abdulrehman104+abdulrehman104@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "langchain>=0.3.25",
+    "langchain-community>=0.3.25",
+    "langchain-core>=0.3.65",
+    "langchain-google-genai>=2.1.5",
+    "langchain-pinecone>=0.2.8",
+    "langchain-qdrant>=0.2.0",
+    "pinecone-notebooks>=0.1.1",
+    "pypdf>=5.6.0",
+    "python-dotenv>=1.1.0",
+]
+
+[project.scripts]
+pdf = "chat_with_pdf:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,28 @@
+[project]
+name = "f1-chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abdulrehman1004", email = "rehman.abdul008844@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "langchain>=0.3.17",
+    "langchain-community>=0.3.16",
+    "langchain-core>=0.3.33",
+    "langchain-google-genai>=2.0.9",
+    "langchain-huggingface>=0.1.2",
+    "langchain-qdrant>=0.2.0",
+    "python-dotenv>=1.0.1",
+    "qdrant-client>=1.13.2",
+    "streamlit>=1.41.1",
+]
+
+[project.scripts]
+f1-chatbot = "f1_chatbot:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

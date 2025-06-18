@@ -1,0 +1,5 @@
+# Api keys and sensitive data
+.env
+
+# Virtual environments
+.venv
